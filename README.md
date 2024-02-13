@@ -1,7 +1,5 @@
 # WordleCup.io Assignment
 
-
-
 ## Get Started
   1. Clone the repository
      ```bash
@@ -20,4 +18,8 @@
         ```
 
 ## Screenshots
+
+![image](https://github.com/gaurav147-star/WordleCup-Frontend/assets/78996081/5e6faa6f-863e-4478-9637-7282f6471ad9)
+![image](https://github.com/gaurav147-star/WordleCup-Frontend/assets/78996081/908134a6-54ad-405c-ada9-52efe4fc7e96)
+![image](https://github.com/gaurav147-star/WordleCup-Frontend/assets/78996081/c29b2008-3d0b-4bb9-9ec0-23125f179f8e)
 
