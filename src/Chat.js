@@ -18,16 +18,16 @@ function Chat({ socket, username, room }) {
       };
 
       await socket.emit("send_message", messageData);
-      setMessageList((list) => [...list, messageData]);
+      setMessageList([...messageList, messageData]);
       setCurrentMessage("");
     }
   };
 
   useEffect(() => {
     socket.on("receive_message", (data) => {
-      setMessageList((list) => [...list, data]);
+      setMessageList([...messageList, data]);
     });
-  }, [socket]);
+  }, [messageList]);
 
   return (
     <div className="chat-window">
@@ -40,7 +40,7 @@ function Chat({ socket, username, room }) {
             return (
               <div
                 className="message"
-                id={username === messageContent.author ? "you" : "other"}
+                id={username !== messageContent.author ? "you" : "other"}
               >
                 <div>
                   <div className="message-content">
